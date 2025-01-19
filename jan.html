@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+ <link rel="icon" type="image/x-icon" href="Icons/logo.png">
+<link rel="stylesheet" type="text/css" href="Loelle.css">
+<link rel="stylesheet" href="Aron.css">
+ </head>
+
+ <body>
+     <!-- header start -->
+     <header class ="header">
+     	<!-- logo -->
+     	<a href="jan.html" class="logo">
+     		<img src="scoop.png">
+     	</a>
+
+     	<!-- nav bar start -->
+     	<nav class="navbar">
+                  <input type="checkbox" id="check">
+                     <label for="check" class="check-btn">
+                          <i class="fas fa-bard"></i>
+                     </label>
+                  <ul>
+                      <li><a href="CSS coding.html">Home</a></li>
+                      <li><a href="jan.html">Menu</a><li>
+                      <li><a class="active" href="about us.html">About Us</a><li>
+                  </ul>
+              <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+              </nav>
+              <!-- nav bar end -->
+
+
+   <!-- hyperlink with icons (search, cart, profile,menu button) -->
+   <div class = "icons">
+   <div class="cart-container" onmouseover="showCartform()" onmouseout="hidecartforms()">
+   <a href="4-cart.html">
+   <div class = "fas fa-shopping-cart" id="cartbutton"></div>
+   </a>
+   <div class="cart-form" id="cartform">
+   <form>
+   <div id="cartitems"></div>
+   <div id="total-price">total price: ₱<span id="totalprice">0.00</span></div>
+          </form>
+      </div>
+   </div>  	
+   <!-- hyperlink with icons (search, cart, profile, menu button) -->
+</header>
+<!-- header end -->
+
+<!-- Menu Section -->
+<section class="menu" id="menu">
+<h1 class="heading">OUR <span>MENU</span></h1>
+
+<p class="heading-description">Chill with us and feel the thrill in every scoop</p>
+<div class="category-text" style="text-align: center; font-size: 70px;">
+  <h3>Ice cream cones</h3>
+</div>
+
+<div class="menu">
+	<div class="container menu-section">
+				
+				<!-- product 2-->
+					<div class=" menu-content" >
+				<div class="menu-box" >
+			        <div class="menu-img" >
+			        <img src="rock.jpg" alt="Rocky Road">
+			    </div>
+				<h3>Rocky Road</h3>
+				<p>Rocky Road ice cream is a rich and creamy chocolate-based treat loaded with crunchy almonds, gooey marshmallows, and a delightful mix of textures and flavors in every bite.</p>
+				<div onclick="addtocart('rocky road (small)', '₱35.00', 'Products/No BG/rocky road.png', 'item2-s'); return false;">
+					<button id="item1-s">Small <span>₱35.00</span></button> <!-- SMALL -->
+				</div>
+				<div onclick="addtocart('rocky roas (meduim)', '₱55.00', 'Products/No BG/rocky roas.png', 'item2-s'); return false;">
+					<button id="item1-s">MEDUIM <span>₱55.00</span></button> <!-- MEDUIM -->
+				</div>
+			    <div onclick="addtocart('rocky road (large)', '₱70.00', 'Products/No BG/rocky road.png', 'item2-s'); return false;">
+					<button id="item1-s">Large <span>₱70.00</span></button> <!-- LARGE -->
+				</div>
+			</div>
+		</div>
+
+		<!-- product 3-->
+					<div class=" menu-content" >
+						<div class="menu-box" >
+			        <div class="menu-img" >
+			        <img src="vanila.jpg" alt="Vanilla">
+			    </div>
+				<h3>Vanilla</h3>
+				<p>Vanilla ice cream is a classic, creamy frozen treat made with milk, cream, sugar, and natural vanilla, delivering a rich, comforting flavor.</p>
+				<div onclick="addtocart('vanilla (small)', '₱35.00', 'Products/No BG/rocky road.png', 'item3-s'); return false;">
+					<button id="item1-s">Small <span>₱35.00</span></button> <!-- SMALL -->
+				</div>
+				<div onclick="addtocart('vanilla (meduim)', '₱55.00', 'Products/No BG/rocky roas.png', 'item3-s'); return false;">
+					<button id="item1-s">MEDUIM <span>₱55.00</span></button> <!-- MEDUIM -->
+				</div>
+			    <div onclick="addtocart('vanilla (large)', '₱70.00', 'Products/No BG/rocky road.png', 'item3-s'); return false;">
+					<button id="item1-s">Large <span>₱70.00</span></button> <!-- LARGE -->
+				</div>
+			</div>
+		</div>
+
+
+		<!-- product 4-->
+					<div class=" menu-content" >
+							<div class="menu-box" >
+			        <div class="menu-img" >
+			        <img src="salt.jpg" alt="Salted caramelS">
+			    </div>
+				<h3>Salted caramel</h3>
+				<p>Salted caramel ice cream is a rich, creamy dessert that combines the sweet, buttery flavor of caramel with a hint of sea salt, creating a perfect balance of sweet and savory.</p>
+				<div onclick="addtocart('salted caramel (small)', '₱35.00', 'Products/No BG/rocky road.png', 'item4-s'); return false;">
+					<button id="item1-s">Small <span>₱35.00</span></button> <!-- SMALL -->
+				</div>
+				<div onclick="addtocart('salted caramel (meduim)', '₱55.00', 'Products/No BG/rocky roas.png', 'item4-s'); return false;">
+					<button id="item1-s">MEDUIM <span>₱55.00</span></button> <!-- MEDUIM -->
+				</div>
+			    <div onclick="addtocart('salted caramel (large)', '₱70.00', 'Products/No BG/rocky road.png', 'item4-s'); return false;">
+					<button id="item1-s">Large <span>₱70.00</span></button> <!-- LARGE -->
+				</div>
+			</div>
+		</div>
+
+
+		<!-- product 5-->
+					<div class=" menu-content" >
+						<div class="menu-box" >
+			        <div class="menu-img" >
+			        <img src="cookies.jpg" alt="Cookies and Cream">
+				<h3>Cookies and Cream</h3>
+				<p>Cookies and cream ice cream is a creamy, sweet treat made with vanilla or chocolate ice cream mixed with chunks of crunchy chocolate cookies, typically sandwich cookies like Oreos</p>
+				<div onclick="addtocart('Cookies and Cream (small)', '₱35.00', 'Products/No BG/rocky road.png', 'item5-s'); return false;">
+					<button id="item1-s">Small <span>₱35.00</span></button> <!-- SMALL -->
+				</div>
+				<div onclick="addtocart('Cookies and Cream (meduim)', '₱55.00', 'Products/No BG/rocky roas.png', 'item5-s'); return false;">
+					<button id="item1-s">MEDUIM <span>₱55.00</span></button> <!-- MEDUIM -->
+				</div>
+			    <div onclick="addtocart('Cookies and Cream (large)', '₱70.00', 'Products/No BG/rocky road.png', 'item5-s'); return false;">
+					<button id="item1-s">Large <span>₱70.00</span></button> <!-- LARGE -->
+				</div>
+			</div>
+		</div>
+
+	
+</section>
+     <!-- Menu Section end -->
+
+     <footer>
+    <p>© 2024 Scoop Paradise. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
